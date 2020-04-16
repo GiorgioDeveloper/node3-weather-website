@@ -21,18 +21,18 @@ hbs.registerPartials(partialsPath);
 app.use(express.static(publicDirectoryPath));
 
 app.get("", (req, res) => {
-  res.render("index", { title: "Weather app", name: "Giorgio1" });
+  res.render("index", { title: "Weather app", name: "Giorgio" });
 });
 
 app.get("/about", (req, res) => {
-  res.render("about", { title: "About me", name: "Giorgio2" });
+  res.render("about", { title: "About me", name: "Giorgio" });
 });
 
 app.get("/help", (req, res) => {
   res.render("help", {
     helpText: "how can I help",
     title: "Help",
-    name: "Giorgio3",
+    name: "Giorgio",
   });
 });
 
